@@ -1,0 +1,22 @@
+{
+  "name": "@cto/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "fastify": "^4.28.1",
+    "@fastify/cors": "^9.0.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/ws": "^8.5.12",
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.5"
+  }
+}

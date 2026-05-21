@@ -1,0 +1,17 @@
+{
+  "name": "codebuddy-team-observer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time monitoring dashboard for CodeBuddy multi-agent teams",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=server && npm install --workspace=web",
+    "dev": "concurrently -n server,web -c blue,green \"npm run dev --workspace=server\" \"npm run dev --workspace=web\"",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:web": "npm run dev --workspace=web",
+    "build": "npm run build --workspace=web"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
